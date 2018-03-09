@@ -14,11 +14,13 @@
 
 <p>${errorMessage}</p>
 
-<form action="/login.do" method="post">
+<form action="/user.do" method="post">
     <p>Name: <input type="text" name="name"/></p>
     <p>Passwort: <input type="password" name="password"/></p>
     <input type="submit" value="Anmelden">
 </form>
+
+<p><a href="/registrieren">Register</a></p>
 
 </body>
 </html>

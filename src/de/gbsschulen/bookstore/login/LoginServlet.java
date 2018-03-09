@@ -1,7 +1,6 @@
-package de.gbsschulen.bookstore;
+package de.gbsschulen.bookstore.login;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -26,7 +25,7 @@ public class LoginServlet extends HttpServlet {
         if (loginService.checkPassword(name, password)) {
             req.setAttribute("name", name);
             // Nur als Testzweck
-            // loginService.saveLogin(new Login(name,password));
+            // loginService.saveLogin(new User(name,password));
             req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, resp);
         } else {
             req.setAttribute("errorMessage", "LoginServlet nicht erfolgreich");

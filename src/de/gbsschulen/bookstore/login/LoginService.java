@@ -1,4 +1,4 @@
-package de.gbsschulen.bookstore;
+package de.gbsschulen.bookstore.login;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -19,11 +19,11 @@ public class LoginService {
     } // END public LoginService()
 
     // METHODS
-    public void saveLogin(Login login) {
+    public void saveLogin(User user) {
         entityManager.getTransaction().begin();
-        entityManager.persist(login);
+        entityManager.persist(user);
         entityManager.getTransaction().commit();
-    } // END public void saveLogin(Login login)
+    } // END public void saveLogin(User user)
 
     public boolean checkPassword(String name, String password) {
 
@@ -31,11 +31,11 @@ public class LoginService {
             return false;
         } // END IF
 
-        TypedQuery<Login> query = entityManager.createQuery("SELECT l FROM Login l WHERE l.loginname = :name", Login.class);
+        TypedQuery<User> query = entityManager.createQuery("SELECT l FROM User l WHERE l.loginname = :name", User.class);
         query.setParameter("name", name);
-        List<Login> resultList = query.getResultList();
-        for (Login login : resultList) {
-            if (login.getLoginname().equals(name) && login.getPassword().equals(password)) {
+        List<User> resultList = query.getResultList();
+        for (User user : resultList) {
+            if (user.getLoginname().equals(name) && user.getPassword().equals(password)) {
                 return true;
             } // END IF
         } // END FOR
