@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form method="post" action="/registrieren">
+<form method="post" action="registrieren">
     <p>Benutzer: <input type="text" name="username"></p>
     <p>Passwort: <input type="password" name="password"></p>
     <p><input type="submit" value="Register"></p>

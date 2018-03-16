@@ -10,11 +10,11 @@ public class BookService {
     private EntityManagerFactory entityManagerFactory;
     private EntityManager entityManager;
 
-    // CONSTRUCTORS
+    // CONSTRUCTOR
     public BookService() {
         entityManagerFactory = Persistence.createEntityManagerFactory("bookstore");
         entityManager = entityManagerFactory.createEntityManager();
-    }
+    } // END CONSTRUCTOR
 
     // METHODS
     public void save(Book book) {
