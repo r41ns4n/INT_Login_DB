@@ -26,7 +26,8 @@ public class LoginServlet extends HttpServlet {
             req.setAttribute("name", name);
             // Nur als Testzweck
             // loginService.saveLogin(new User(name,password));
-            req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, resp);
+            // req.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(req, resp);
+            resp.sendRedirect("listBooks.do");
         } else {
             req.setAttribute("errorMessage", "LoginServlet nicht erfolgreich");
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);

@@ -5,17 +5,29 @@
          version="3.1">
 
     <welcome-file-list>
-        <welcome-file>user.do</welcome-file>
+        <welcome-file>login</welcome-file>
     </welcome-file-list>
 
+
+    <!--Ersetzt Anutation @WebServlet im Servlet!!!  -->
     <servlet>
         <servlet-name>Login</servlet-name>
         <servlet-class>de.gbsschulen.bookstore.login.LoginServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>ListBook</servlet-name>
+        <servlet-class>de.gbsschulen.bookstore.book.ListBookServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
-        <url-pattern>/user.do</url-pattern>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ListBook</servlet-name>
+        <url-pattern>/listBooks.do</url-pattern>
     </servlet-mapping>
 
 

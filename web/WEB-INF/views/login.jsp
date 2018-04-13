@@ -14,7 +14,7 @@
 
 <p>${errorMessage}</p>
 
-<form action="user.do" method="post">
+<form action="login" method="post">
     <p>Name: <input type="text" name="name"/></p>
     <p>Passwort: <input type="password" name="password"/></p>
     <input type="submit" value="Anmelden">
