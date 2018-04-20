@@ -6,9 +6,25 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Include Header -->
-<%@include file="../common/header.jspf" %>
+<html>
+<head>
+    <title>Bookstore</title>
+    <style>
+        .container {
+            position: relative;
+            top: 50px;
+            left: 50px;
+            width: 300px;
+            background-color: #f5f5f5;
+            border: 1px solid black;
+            padding: 50px;
+        }
+
+    </style>
+
+</head>
 
 
 <div class="container">
@@ -17,12 +33,12 @@
 <form action="login" method="post">
     <p>Name: <input type="text" name="name"/></p>
     <p>Passwort: <input type="password" name="password"/></p>
-    <input type="submit" value="Anmelden"/>
+    <input type="submit" value="Anmelden" class="btn btn-success"/>
 </form>
 
 <p><a href="registrieren">Register</a></p>
 
 </div>
 
-<!-- Include Footer -->
-<%@include file="../common/footer.jspf" %>
+</body>
+</html>

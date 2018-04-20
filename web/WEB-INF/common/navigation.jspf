@@ -3,7 +3,7 @@
     <a href="http://localhost:8080/login" class="navbar-brand">GBS</a>
     <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="http://localhost:8080/listBooks.do">Bücherliste</a></li>
+        <li><a href="http://localhost:8080/listBooks.do">Booklist</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="logout.do">Logout</a> </li>
