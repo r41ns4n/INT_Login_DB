@@ -6,12 +6,12 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Login</title>
-</head>
-<body>
 
+<!-- Include Header -->
+<%@include file="../common/header.jspf" %>
+
+
+<div class="container">
 <p>${errorMessage}</p>
 
 <form action="login" method="post">
@@ -22,5 +22,7 @@
 
 <p><a href="registrieren">Register</a></p>
 
-</body>
-</html>
+</div>
+
+<!-- Include Footer -->
+<%@include file="../common/footer.jspf" %>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.webjars:bootstrap:3.3.7" type="repository">
+    <properties maven-id="org.webjars:bootstrap:3.3.7" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/webjars/bootstrap/3.3.7/bootstrap-3.3.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/webjars/jquery/1.11.1/jquery-1.11.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

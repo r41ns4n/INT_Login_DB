@@ -13,17 +13,12 @@ public class ListBooksServlet extends HttpServlet {
     // DATA FIELDS
     private BookService bookService = new BookService();
 
+    // Methods
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // List<Book> books = bookService.readAllBooks();
         req.getSession().setAttribute("books", bookService.readAllBooks());
-        System.out.println("doGet ListBooksServlet");
         req.getRequestDispatcher("/WEB-INF/views/listBooks.jsp").forward(req, resp);
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doPost ListBooks");
     }
 }
 
