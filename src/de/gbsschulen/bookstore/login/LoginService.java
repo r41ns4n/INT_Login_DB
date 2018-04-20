@@ -35,7 +35,9 @@ public class LoginService {
         query.setParameter("name", name);
         List<User> resultList = query.getResultList();
         for (User user : resultList) {
+            System.out.println(user);
             if (user.getLoginname().equals(name) && user.getPassword().equals(password)) {
+                System.out.println(user.getLoginname());
                 return true;
             } // END IF
         } // END FOR

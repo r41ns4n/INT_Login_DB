@@ -15,20 +15,20 @@
         <servlet-class>de.gbsschulen.bookstore.login.LoginServlet</servlet-class>
     </servlet>
 
-    <servlet>
-        <servlet-name>ListBook</servlet-name>
-        <servlet-class>de.gbsschulen.bookstore.book.ListBookServlet</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>ListBooks</servlet-name>-->
+        <!--<servlet-class>de.gbsschulen.bookstore.book.ListBooksServlet</servlet-class>-->
+    <!--</servlet>-->
 
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>ListBook</servlet-name>
-        <url-pattern>/listBooks.do</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>ListBooks</servlet-name>-->
+        <!--<url-pattern>/listBooks.do</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 
 </web-app>
